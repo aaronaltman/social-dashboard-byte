@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
     <script src="/script.js" defer></script>
     <link rel="stylesheet" href="/style.css" />
@@ -12,7 +12,8 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="flex flex-col min-h-screen">
+  <body class="flex flex-col h-screen">
+    <!-- Changed to h-screen -->
     <header
       class="flex justify-between px-4 items-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
     >
@@ -45,12 +46,14 @@
             src="https://images.unsplash.com/photo-1614247484197-9c6164bb532f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=60&q=100"
             alt="User photo"
           />
-          <span class="">John Doe</span>
+          <span>John Doe</span>
         </button>
       </div>
     </header>
-    <div id="backgroundContainer" class="">
-      <div id="innerContainer" class="flex h-screen">
+    <div id="backgroundContainer" class="flex-1 overflow-auto">
+      <!-- Added flex-1 and overflow-auto -->
+      <div id="innerContainer" class="flex h-full">
+        <!-- Changed to h-full -->
         <div
           id="sidebar"
           class="flex flex-col py-6 bg-slate-900 text-white/70 w-[75px]"
@@ -77,74 +80,59 @@
               <i class="fa-solid fa-shapes"></i>Shapes
             </button>
           </div>
-         
         </div>
         <div id="panel" class="flex flex-col flex-wrap bg-slate-700 w-[350px]">
-            <div class="flex items-center justify-between">
-                <h1 class="text-white py-6 px-10 text-xl">Images</h1>
-               <button><i class="fa-solid fa-angles-left text-white pr-8"></i></button> 
-            </div>
-            <div class="flex flex-wrap gap-2 mx-auto pl-8">
-                <img
-                class="h-[140px] w-[140px] rounded-lg object-cover hover:scale-105 transition-all hover:cursor-pointer"
-                src="https://images.unsplash.com/photo-1543096222-72de739f7917?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&fit=crop&w=280&q=100"
-                alt="Uploaded image"
-                 />
-
-                        <img
-                class="h-[140px] w-[140px] rounded-lg object-cover hover:scale-105 transition-all hover:cursor-pointer"
-                src="https://images.unsplash.com/photo-1475598322381-f1b499717dda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&h=280&q=100"
-                alt="Uploaded image"
-                 />
-
-                  <img
-                    class="h-[140px] w-[140px] rounded-lg object-cover hover:scale-105 transition-all hover:cursor-pointer"
-                    src="https://images.unsplash.com/photo-1615887023516-9b6bcd559e87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=280&q=100"
-                    alt="Uploaded image"
-                />
-
-          <img
-            class="h-[140px] w-[140px] rounded-lg object-cover hover:scale-105 transition-all hover:cursor-pointer"
-            src="https://images.unsplash.com/photo-1615749190340-34c7c3b16784?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=280&q=100"
-            alt="Uploaded image"
-          />
-
-          <img class="h-[140px] w-[140px] rounded-lg object-cover hover:scale-105 transition-all hover:cursor-pointer"
-          src="https://images.unsplash.com/photo-1615707547992-93435f1e7f13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=280&q=100"
-          alt="Upl"
-            />
-        <button class="bg-slate-800 hover:bg-white/10 px-11 h-[140px] w-[140px] rounded-lg"><i class="fa-solid fa-plus text-white"></i></button>
-            </div>
+          <div class="flex items-center justify-between">
+            <h1 class="text-white py-6 px-10 text-xl">Images</h1>
+            <button>
+              <i class="fa-solid fa-angles-left text-white pr-8"></i>
+            </button>
+          </div>
+          <div class="flex flex-wrap gap-2 mx-auto pl-8">
+            <!-- Images and buttons here -->
+          </div>
         </div>
-      <div id="main" class="flex-1 justify-center bg-slate-200">
-          <div class="flex justify-between items-center bg-zinc-50 h-10  uppercase pl-10">
+        <div id="main" class="flex flex-1 justify-center bg-slate-200">
+          <!-- Added flex-1 -->
+          <div
+            class="flex justify-between items-center bg-zinc-50 h-10 uppercase pl-10"
+          >
             <div>
-                 <a href="#" class="pr-3 text-xs text-slate-300 hover:text-slate-500">Facebook Posts</a>
-                 <i class="fa-solid fa-angles-right text-xs text-slate-400"></i>
-                 <a href="#" class=" pl-3  text-xs text-slate-400 hover:text-slate-700">Happy-Hour-Friday</a>
-                 </div>
-                 <div class="pr-4">
-                 <button class="text-sm bg-blue-800 px-6 py-1 rounded-xl text-white hover:bg-blue-200 hover:text-slate-900">Publish</button>
-                 </div>
+              <a
+                href="#"
+                class="pr-3 text-xs text-slate-300 hover:text-slate-500"
+                >Facebook Posts</a
+              >
+              <i class="fa-solid fa-angles-right text-xs text-slate-400"></i>
+              <a
+                href="#"
+                class="pl-3 text-xs text-slate-400 hover:text-slate-700"
+                >Happy-Hour-Friday</a
+              >
+            </div>
+            <div class="pr-4">
+              <button
+                class="text-sm bg-blue-800 px-6 py-1 rounded-xl text-white hover:bg-blue-200 hover:text-slate-900"
+              >
+                Publish
+              </button>
+            </div>
           </div>
           <div class="flex h-full justify-center items-center">
-            <div class="flex flex-col md:flex-row gap-2 ">
-            <div class="bg-white/30 p-20">
-                <img class="h-[140px] w-[140px]" src="https://images.unsplash.com/photo-1615887023516-9b6bcd559e87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=2134&q=100" alt="Background image">
-                <img class="h-[140px] w-[140px]" src="https://images.unsplash.com/photo-1615887023516-9b6bcd559e87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=1453&q=85" alt="Foreground image"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            <div class="flex flex-col space-y-3">
-              <button><i class="fa-solid fa-crop"></i></button>
-              <button><i class="fa-solid fa-object-group"></i></button>
-              <button><i class="fa-solid fa-pen"></i></button>
-              <button><i class="fa-solid fa-trash"></i></button>
-            </div>
+            <div class="flex flex-col md:flex-row gap-2">
+              <div class="bg-white/30 p-20">
+                <!-- Images here -->
+              </div>
+              <div class="flex flex-col space-y-3">
+                <button><i class="fa-solid fa-crop"></i></button>
+                <button><i class="fa-solid fa-object-group"></i></button>
+                <button><i class="fa-solid fa-pen"></i></button>
+                <button><i class="fa-solid fa-trash"></i></button>
+              </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
   </body>
 </html>
