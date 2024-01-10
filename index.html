@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/3d136ddd0f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="max-h-100dvh">
+    <header
+      class="flex justify-between px-4 items-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+    >
+      <div class="flex flex-row space-x-4 text-sm text-white/70">
+        <img
+          class="logo"
+          src="https://bytegrad.com/course-assets/css/1/logo.svg"
+          alt="Logo"
+        />
+        <button class="hover:bg-white/10 p-4">File</button>
+        <button class="hover:bg-white/10 p-4">View</button>
+        <button class="hover:bg-white/10 p-4">New</button>
+      </div>
+      <div class="flex justify-center items-center space-x-4">
+        <button>
+          <i
+            class="fa-solid fa-crown text-white/70 hover:bg-white/10 py-4 px-2"
+          ></i>
+        </button>
+        <button>
+          <i
+            class="fa-solid fa-bell text-white/70 hover:bg-white/10 py-4 px-2"
+          ></i>
+        </button>
+        <button
+          class="flex items-center justify-center space-x-2 font-bold text-white text-sm"
+        >
+          <img
+            class="h-[25px] w-[25px] rounded-full object-cover"
+            src="https://images.unsplash.com/photo-1614247484197-9c6164bb532f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=60&q=100"
+            alt="User photo"
+          />
+          <span class="">John Doe</span>
+        </button>
+      </div>
+    </header>
+    <div id="backgroundContainer" class="bg-zinc-100 max-h-100dvh">
+      <div id="innerContainer" class="flex w-full">
+        <div
+          id="sidebar"
+          class="flex flex-col py-6 bg-slate-900 min-h-screen text-white/70 w-[75px]"
+        >
+          <div class="flex flex-col items-center">
+            <button
+              class="flex flex-col items-center pt-[19px] text-[12px] w-full py-4 hover:bg-white/10"
+            >
+              <i class="fa-solid fa-layer-group"></i>Templates
+            </button>
+            <button
+              class="flex flex-col items-center pt-[19px] text-[12px] bg-slate-700 w-full py-4 border border-r-0 border-l-0 border-white/10"
+            >
+              <i class="fa-solid fa-image"></i>Images
+            </button>
+            <button
+              class="flex flex-col items-center text-[12px] w-full py-4 hover:bg-white/10"
+            >
+              <i class="fa-solid fa-font"></i>Text/Font
+            </button>
+            <button
+              class="flex flex-col items-center text-[12px] w-full py-4 hover:bg-white/10 transition-all"
+            >
+              <i class="fa-solid fa-shapes"></i>Shapes
+            </button>
+          </div>
+          <footer class="-rotate-90 mt-auto pb-10">
+            <small class="flex">&copy; copyright</small>
+          </footer>
+        </div>
+        <div id="panel" class="flex flex-col flex-wrap bg-slate-700 w-[350px]">
+            <div class="flex items-center justify-between">
+                <h1 class="text-white py-6 px-10 text-xl">Images</h1>
+                <i class="fa-solid fa-arrow-left mx-auto text-white"></i>
+            </div>
+            <div class="flex flex-wrap gap-2 mx-auto pl-8">
+                <img
+                class="h-[140px] w-[140px] rounded-lg object-cover hover:scale-105 transition-all hover:cursor-pointer"
+                src="https://images.unsplash.com/photo-1543096222-72de739f7917?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&fit=crop&w=280&q=100"
+                alt="Uploaded image"
+                 />
+
+                        <img
+                class="h-[140px] w-[140px] rounded-lg object-cover hover:scale-105 transition-all hover:cursor-pointer"
+                src="https://images.unsplash.com/photo-1475598322381-f1b499717dda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&h=280&q=100"
+                alt="Uploaded image"
+                 />
+
+                  <img
+                    class="h-[140px] w-[140px] rounded-lg object-cover hover:scale-105 transition-all hover:cursor-pointer"
+                    src="https://images.unsplash.com/photo-1615887023516-9b6bcd559e87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=280&q=100"
+                    alt="Uploaded image"
+                />
+
+          <img
+            class="h-[140px] w-[140px] rounded-lg object-cover hover:scale-105 transition-all hover:cursor-pointer"
+            src="https://images.unsplash.com/photo-1615749190340-34c7c3b16784?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=280&q=100"
+            alt="Uploaded image"
+          />
+
+          <img class="h-[140px] w-[140px] rounded-lg object-cover hover:scale-105 transition-all hover:cursor-pointer"
+          src="https://images.unsplash.com/photo-1615707547992-93435f1e7f13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=280&q=100"
+          alt="Upl"
+            />
+        <button class="bg-slate-800 hover:bg-white/10 px-11 h-[140px] w-[140px] rounded-lg"><i class="fa-solid fa-plus text-white"></i></button>
+            </div>
+        </div>
+      <div id="main" class="flex-1 bg-slate-200">
+          <p class="border-b py-4 px-10">all sorts of things here</p>
+        </div>
+    </div>
+  </body>
+</html>
